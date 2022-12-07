@@ -5,7 +5,7 @@
 
 MyTop100Movies - API, Database, CRUD - Application which lets users set their top 100 movies.
 Movies could come from an API like The Movie Database [http://tmdb.org/](http://tmdb.org/). Should allow users to add
-a movie, list and rank their movie selections. Start with basic CRUD for movies and add features.
+a movie to the list and rank their movie selections. Start with basic CRUD for movies and add features.
 
 
 ## Test Criteria
@@ -17,5 +17,5 @@ a movie, list and rank their movie selections. Start with basic CRUD for movies 
 
 
 
-Deadline for submission is 5 days, kindly let us know if you come up with any challenges or need
+Deadline for submission is 7 days, kindly let us know if you come up with any challenges or need
 a deadline extension. Final work should be submitted to hussein@sakneen.com, milad@sakneen.com, or open PR on this repo
