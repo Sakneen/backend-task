@@ -9,9 +9,9 @@ a movie, list and rank their movie selections. Start with basic CRUD for movies 
 
 
 ## Test Criteria
-- Design your schema properly for Nosql or proper relationships for SQL database implementation
+- Design your schema properly for Nosql database implementation
 - Write a unit test for all services and controllers
-- Use express.js but nest.js
+- Use express.js and nest.js
 - Document your API using postman or swagger
 - Host it on a live link when done, push the code to Github.
 
