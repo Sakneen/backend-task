@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
 @Schema({ timestamps: true })
-export class Property extends Document {
+export class Property extends Document<Types.ObjectId> {
   @Prop({ type: Types.ObjectId, required: true })
   organizationId: Types.ObjectId;
 
@@ -37,4 +37,5 @@ export class Property extends Document {
   compoundId: Types.ObjectId;
 }
 
+export type PropertyDocument = Property & Document;
 export const PropertySchema = SchemaFactory.createForClass(Property);
