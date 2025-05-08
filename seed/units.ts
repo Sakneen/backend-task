@@ -15,6 +15,7 @@ export const properties = [
     unitId: 'UNIT-101',
     amenities: ['Swimming Pool', 'Gym', 'Security', 'Parking'],
     compoundId: new Types.ObjectId(),
+    availabilityDays: ['Saturday', 'Sunday'],
   },
   {
     organizationId: new Types.ObjectId(),
@@ -28,6 +29,7 @@ export const properties = [
     unitId: 'UNIT-202',
     amenities: ['Garden', 'Playground', '24/7 Security', 'Underground Parking'],
     compoundId: new Types.ObjectId(),
+    availabilityDays: ['Monday', 'Tuesday', 'Thursday'],
   },
   {
     organizationId: new Types.ObjectId(),
@@ -41,6 +43,14 @@ export const properties = [
     unitId: 'UNIT-303',
     amenities: ['Private Pool', 'Smart Home', 'Garden', 'Security', 'Parking'],
     compoundId: new Types.ObjectId(),
+    availabilityDays: [
+      'Saturday',
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+    ],
   },
   {
     organizationId: new Types.ObjectId(),
@@ -54,6 +64,14 @@ export const properties = [
     unitId: 'UNIT-404',
     amenities: ['Security', 'Parking', 'Gym'],
     compoundId: new Types.ObjectId(),
+    availabilityDays: [
+      'Saturday',
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+    ],
   },
   {
     organizationId: new Types.ObjectId(),
@@ -74,6 +92,14 @@ export const properties = [
       'Playground',
     ],
     compoundId: new Types.ObjectId(),
+    availabilityDays: [
+      'Saturday',
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+    ],
   },
 ];
 
