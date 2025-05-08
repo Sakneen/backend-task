@@ -1,8 +1,26 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 
+export interface IProperty {
+  _id: Types.ObjectId;
+  organizationId: Types.ObjectId;
+  bua: number;
+  totalBua: number;
+  landArea: number;
+  price: number;
+  beds: number;
+  bathrooms: number;
+  buildingId: string;
+  unitId: string;
+  amenities: string[];
+  compoundId: Types.ObjectId;
+  availabilityDays: string[];
+}
+
 @Schema({ timestamps: true })
-export class Property extends Document<Types.ObjectId> {
+export class Property implements IProperty {
+  _id: Types.ObjectId;
+
   @Prop({ type: Types.ObjectId, required: true })
   organizationId: Types.ObjectId;
 
@@ -35,6 +53,9 @@ export class Property extends Document<Types.ObjectId> {
 
   @Prop({ type: Types.ObjectId, required: true })
   compoundId: Types.ObjectId;
+
+  @Prop({ type: [String], required: true })
+  availabilityDays: string[];
 }
 
 export type PropertyDocument = Property & Document;
